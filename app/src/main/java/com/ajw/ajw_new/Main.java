@@ -14,6 +14,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.ajw.ajw_new.Activity.About;
+import com.ajw.ajw_new.Activity.Home;
 import com.ajw.ajw_new.Activity.Setting;
 
 public class Main extends AppCompatActivity
@@ -86,11 +88,13 @@ public class Main extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-
+            Intent i = new Intent(Main.this,Home.class);
+            startActivity(i);
         } else if (id == R.id.nav_maps) {
 
         } else if (id == R.id.nav_about) {
-
+            Intent i = new Intent(Main.this,About.class);
+            startActivity(i);
         } else if (id == R.id.nav_setting) {
             Intent i = new Intent(Main.this,Setting.class);
             startActivity(i);
