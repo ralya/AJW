@@ -89,9 +89,12 @@ public class Main extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
+            Intent i = new Intent(Main.this,Main.class);
+            startActivity(i);
+        }else if (id == R.id.nav_weather) {
             Intent i = new Intent(Main.this,Weather.class);
             startActivity(i);
-        } else if (id == R.id.nav_maps) {
+        }else if (id == R.id.nav_maps) {
             Intent i = new Intent(Main.this,Maps.class);
             startActivity(i);
         } else if (id == R.id.nav_about) {
