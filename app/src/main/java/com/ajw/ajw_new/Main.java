@@ -1,9 +1,11 @@
 package com.ajw.ajw_new;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,6 +15,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 import com.ajw.ajw_new.Activity.About;
 import com.ajw.ajw_new.Activity.Maps;
@@ -21,6 +24,7 @@ import com.ajw.ajw_new.Activity.Weather;
 
 public class Main extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +52,8 @@ public class Main extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         navigationView.setCheckedItem(R.id.nav_home);
+
+
     }
 
     @Override
@@ -103,6 +109,19 @@ public class Main extends AppCompatActivity
         } else if (id == R.id.nav_setting) {
             Intent i = new Intent(Main.this,Setting.class);
             startActivity(i);
+        }else if (id == R.id.nav_exit) {
+            new AlertDialog.Builder(this)
+                    .setTitle("Mau Keluar?")
+                    .setMessage("Yakin sudah cukup?")
+                    .setNegativeButton(android.R.string.no, null)
+                    .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+
+                        public void onClick(DialogInterface arg0, int arg1) {
+                            // MainActivity.super.onBackPressed();
+                            finish();
+                            moveTaskToBack(true);
+                        }
+                    }).create().show();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
