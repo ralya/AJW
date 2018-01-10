@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import com.ajw.ajw_new.Activity.About;
 import com.ajw.ajw_new.Activity.Maps;
 import com.ajw.ajw_new.Activity.Setting;
+import com.ajw.ajw_new.Activity.Weather;
 
 public class Main extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -88,7 +89,8 @@ public class Main extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-
+            Intent i = new Intent(Main.this,Weather.class);
+            startActivity(i);
         } else if (id == R.id.nav_maps) {
             Intent i = new Intent(Main.this,Maps.class);
             startActivity(i);
