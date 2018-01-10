@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="@dimen/nav_header_height"
-    android:background="@mipmap/header"
+    android:background="@mipmap/clouds2"
     android:gravity="bottom"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -25,7 +25,11 @@
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:text="AJW"
         android:textStyle="bold"
-        android:fontFamily="serif"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:shadowRadius="8"
+        android:shadowColor="@color/gray"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
@@ -34,7 +38,11 @@
         android:layout_height="wrap_content"
         android:text="Amikom Jogja Weather"
         android:textStyle="bold"
-        android:fontFamily="serif"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:shadowRadius="8"
+        android:shadowColor="@color/gray"
         />
 
 </LinearLayout>
