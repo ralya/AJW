@@ -16,6 +16,7 @@ import android.view.MenuItem;
 
 import com.ajw.ajw_new.Activity.About;
 import com.ajw.ajw_new.Activity.Home;
+import com.ajw.ajw_new.Activity.Maps;
 import com.ajw.ajw_new.Activity.Setting;
 
 public class Main extends AppCompatActivity
@@ -25,6 +26,7 @@ public class Main extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().setTitle("Home");
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -91,7 +93,8 @@ public class Main extends AppCompatActivity
             Intent i = new Intent(Main.this,Home.class);
             startActivity(i);
         } else if (id == R.id.nav_maps) {
-
+            Intent i = new Intent(Main.this,Maps.class);
+            startActivity(i);
         } else if (id == R.id.nav_about) {
             Intent i = new Intent(Main.this,About.class);
             startActivity(i);
