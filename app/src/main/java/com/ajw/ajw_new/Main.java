@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -18,29 +19,22 @@ import android.view.MenuItem;
 import android.widget.Button;
 
 import com.ajw.ajw_new.Activity.About;
+import com.ajw.ajw_new.Activity.Login;
 import com.ajw.ajw_new.Activity.Maps;
+import com.ajw.ajw_new.Activity.Register;
 import com.ajw.ajw_new.Activity.Setting;
 import com.ajw.ajw_new.Activity.Weather;
 
 public class Main extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-
+    CardView weather, maps, register, about, flash;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -52,6 +46,52 @@ public class Main extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         navigationView.setCheckedItem(R.id.nav_home);
+
+
+        weather = (CardView) findViewById(R.id.weather);
+        about = (CardView) findViewById(R.id.about);
+        maps = (CardView) findViewById(R.id.maps);
+        register = (CardView) findViewById(R.id.register);
+        flash = (CardView) findViewById(R.id.flash);
+        weather.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent s = new Intent(getApplicationContext(),Weather.class);
+                startActivity(s);
+            }
+        });
+
+        maps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent s = new Intent(getApplicationContext(),Maps.class);
+                startActivity(s);
+            }
+        });
+
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent s = new Intent(getApplicationContext(),Register.class);
+                startActivity(s);
+            }
+        });
+
+        about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent s = new Intent(getApplicationContext(),About.class);
+                startActivity(s);
+            }
+        });
+
+        flash.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+                moveTaskToBack(true);
+            }
+        });
 
 
     }
@@ -73,7 +113,7 @@ public class Main extends AppCompatActivity
         return true;
     }
 
-    @Override
+    /*@Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -87,7 +127,7 @@ public class Main extends AppCompatActivity
 
         return super.onOptionsItemSelected(item);
     }
-
+*/
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -112,7 +152,7 @@ public class Main extends AppCompatActivity
         }else if (id == R.id.nav_exit) {
             new AlertDialog.Builder(this)
                     .setTitle("Baru juga sebentar")
-                    .setMessage("Udah mau keluar aja?")
+                    .setMessage("Udah mau keluar aja..")
                     .setNegativeButton(android.R.string.no, null)
                     .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
 
@@ -128,4 +168,12 @@ public class Main extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
+
+
+
+
+
+
 }
