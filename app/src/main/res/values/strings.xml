@@ -5,7 +5,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
-    <string name="register">Register</string>
+    <string name="register">Register Notifikasi</string>
     <string name="Signin">Sign In</string>
     <string name="title_activity_maps">Map</string>
 </resources>
