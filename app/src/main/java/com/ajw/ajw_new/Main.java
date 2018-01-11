@@ -111,8 +111,8 @@ public class Main extends AppCompatActivity
             startActivity(i);
         }else if (id == R.id.nav_exit) {
             new AlertDialog.Builder(this)
-                    .setTitle("Mau Keluar?")
-                    .setMessage("Yakin sudah cukup?")
+                    .setTitle("Baru juga sebentar")
+                    .setMessage("Udah mau keluar aja?")
                     .setNegativeButton(android.R.string.no, null)
                     .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
 
