@@ -88,8 +88,7 @@ public class Main extends AppCompatActivity
         flash.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
-                moveTaskToBack(true);
+
             }
         });
 
