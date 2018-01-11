@@ -61,7 +61,7 @@
         <android.support.v7.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:cardBackgroundColor="@color/cyan2"
+            app:cardBackgroundColor="@color/red"
 
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
@@ -73,57 +73,21 @@
             >
             <LinearLayout
                 android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_margin="16dp"
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:src="@drawable/menu_2"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp" />
-                <TextView
-                    android:text="Maps"
-                    android:layout_gravity="center_horizontal"
-                    android:textColor="@color/white"
-                    android:textSize="18dp"
-                    android:fontFamily="sans-serif"
-                    android:textStyle="bold"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:cardBackgroundColor="@color/cyan2"
-
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_marginBottom="16dp"
-            android:layout_marginLeft="1dp"
-            android:layout_marginRight="16dp"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="8dp"
-            >
-            <LinearLayout
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_margin="16dp"
+                android:layout_margin="8dp"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageView
                     android:src="@drawable/menu_1"
                     android:layout_gravity="center_horizontal"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp" />
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
                 <TextView
-                    android:text="Weather"
+                    android:layout_marginTop="2dp"
+                    android:text="WEATHER"
                     android:layout_gravity="center_horizontal"
                     android:textColor="@color/white"
-                    android:textSize="18dp"
+                    android:textSize="14dp"
                     android:fontFamily="sans-serif"
                     android:textStyle="bold"
                     android:layout_width="wrap_content"
@@ -135,32 +99,33 @@
         <android.support.v7.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:cardBackgroundColor="@color/cyan2"
+            app:cardBackgroundColor="@color/orange"
 
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="1dp"
             android:layout_marginRight="16dp"
-            app:cardElevation="8dp"
+            app:cardElevation="10dp"
             app:cardCornerRadius="8dp"
             >
             <LinearLayout
                 android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_margin="16dp"
+                android:layout_margin="8dp"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:src="@drawable/menu_3"
+                    android:src="@drawable/menu_2"
                     android:layout_gravity="center_horizontal"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp" />
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
                 <TextView
-                    android:text="Weather"
+                    android:layout_marginTop="2dp"
+                    android:text="MAPS"
                     android:layout_gravity="center_horizontal"
                     android:textColor="@color/white"
-                    android:textSize="18dp"
+                    android:textSize="14dp"
                     android:fontFamily="sans-serif"
                     android:textStyle="bold"
                     android:layout_width="wrap_content"
@@ -172,32 +137,33 @@
         <android.support.v7.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:cardBackgroundColor="@color/cyan2"
+            app:cardBackgroundColor="@color/yellow"
 
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="1dp"
             android:layout_marginRight="16dp"
-            app:cardElevation="8dp"
+            app:cardElevation="10dp"
             app:cardCornerRadius="8dp"
             >
             <LinearLayout
                 android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_margin="16dp"
+                android:layout_margin="8dp"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageView
                     android:src="@drawable/menu_3"
                     android:layout_gravity="center_horizontal"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp" />
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
                 <TextView
-                    android:text="Weather"
+                    android:layout_marginTop="2dp"
+                    android:text="REGISTER"
                     android:layout_gravity="center_horizontal"
-                    android:textColor="@color/white"
-                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
                     android:fontFamily="sans-serif"
                     android:textStyle="bold"
                     android:layout_width="wrap_content"
@@ -205,6 +171,121 @@
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:cardBackgroundColor="@color/blue"
+
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="8dp"
+            >
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/menu_2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:text="MAPS"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:cardBackgroundColor="@color/black"
+
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="8dp"
+            >
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/menu_2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:text="MAPS"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:cardBackgroundColor="@color/red2"
+
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="8dp"
+            >
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/menu_2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:text="MAPS"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
 
     </GridLayout>
 
