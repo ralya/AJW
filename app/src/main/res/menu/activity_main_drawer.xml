@@ -25,10 +25,6 @@
             android:icon="@drawable/ic_settings_black_24dp"
             android:title="Setting" />
         <item
-            android:id="@+id/nav_simisimi"
-            android:icon="@drawable/menu_3"
-            android:title="Simisimi" />
-        <item
             android:id="@+id/nav_exit"
             android:icon="@drawable/ic_exit_to_app_black_24dp"
             android:title="Exit" />

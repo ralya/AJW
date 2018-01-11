@@ -19,6 +19,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 
 import com.ajw.ajw_new.Activity.About;
+import com.ajw.ajw_new.Activity.Flashlight;
 import com.ajw.ajw_new.Activity.Login;
 import com.ajw.ajw_new.Activity.Maps;
 import com.ajw.ajw_new.Activity.Register;
@@ -28,7 +29,7 @@ import com.ajw.ajw_new.Activity.Weather;
 public class Main extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    CardView weather, maps, register, about, flash;
+    CardView weather, maps, register, about, exit, flash;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +54,7 @@ public class Main extends AppCompatActivity
         maps = (CardView) findViewById(R.id.maps);
         register = (CardView) findViewById(R.id.register);
         flash = (CardView) findViewById(R.id.flash);
+        exit = (CardView) findViewById(R.id.exit);
         weather.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -77,6 +79,14 @@ public class Main extends AppCompatActivity
             }
         });
 
+        flash.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent s = new Intent(getApplicationContext(),Flashlight.class);
+                startActivity(s);
+            }
+        });
+
         about.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -85,10 +95,12 @@ public class Main extends AppCompatActivity
             }
         });
 
-        flash.setOnClickListener(new View.OnClickListener() {
+
+        exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                finish();
+                moveTaskToBack(true);
             }
         });
 
